@@ -1,3 +1,5 @@
+// this is a simple comment
+
 package training;
 
 public class Positive {
