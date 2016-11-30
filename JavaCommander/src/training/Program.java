@@ -8,11 +8,13 @@ import java.io.InputStreamReader;
 import training.command.Catenate;
 import training.command.ChangeDirectory;
 import training.command.Exit;
+import training.command.ListDirectory;
+import training.command.PrintBinary;
 import training.command.PrintWorkingDirectory;
 
 public class Program {
 
-	private Command[] availableCommands = new Command[] { new ChangeDirectory(), new PrintWorkingDirectory(), new Exit(), new Catenate()};
+	private Command[] availableCommands = new Command[] { new ChangeDirectory(), new PrintWorkingDirectory(), new Exit(), new Catenate(), new PrintBinary(), new ListDirectory()};
 	private Result result = new Result(new File("").getAbsoluteFile());
 	
 	public static void main(String[] args) throws IOException {
